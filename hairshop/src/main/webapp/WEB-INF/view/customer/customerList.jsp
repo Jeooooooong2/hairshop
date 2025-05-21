@@ -55,8 +55,13 @@
                     </div>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                        <div class="card-header py-3" style="display: flex; justify-content: space-between;">
+                            <h6 class="m-0 font-weight-bold text-primary" style="font-size: 40px; line-height: 1.5;">고객 리스트</h6>
+                            <div>
+                            	<a href="#" class="btn btn-primary btn-circle btn-lg">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
