@@ -11,7 +11,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="${pageContext.request.contextPath}/hello">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="${pageContext.request.contextPath}/hairshop//hello">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <img src="images/logo.png" style="width: 30px; height: 30px;">
                 </div>
@@ -23,7 +23,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="${pageContext.request.contextPath}/hello">
+                <a class="nav-link" href="${pageContext.request.contextPath}/hairshop/hello">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -109,7 +109,7 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="${pageContext.request.contextPath}/tables.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
             </li>
@@ -125,6 +125,7 @@
                     <i class="fas fa-fw fa-calendar"></i>
                     <span>예약관리</span></a>
             </li>
+            
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
