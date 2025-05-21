@@ -74,14 +74,12 @@
                                     <tbody>
 									    <c:forEach var="customer" items="${customerList}">
 									        <tr>
-									            <td>${customer.No}</td>
-									            <td>${customer.Name}</td>
-									            <td>${customer.Gender}</td>
-									            <td>${customer.Phone}</td>
-									            <td>${customer.History}</td>
-									            <td>${customer.Memo}</td>
-									            <td><fmt:formatDate value="${customer.startDate}" pattern="yyyy/MM/dd"/></td>
-									            <td><fmt:formatNumber value="${customer.salary}" type="currency"/></td>
+									            <td>${customer.customerNo}</td>
+									            <td>${customer.customerName}</td>
+									            <td>${customer.gender}</td>
+									            <td>${customer.phoneNumber}</td>
+									            <td>${customer.colorLog}</td>
+									            <td>${customer.memo}</td>
 									        </tr>
 									    </c:forEach>
 									</tbody>
