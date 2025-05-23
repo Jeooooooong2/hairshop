@@ -9,4 +9,8 @@ import org.apache.ibatis.annotations.Mapper;
 public interface CustomerMapper {
 	// 고객 리스트 조회
 	List<CustomerVO> getCustomerList();
+	
+	// 고객 추가
+	void insertCustomer(CustomerVO customerVO);
+
 }

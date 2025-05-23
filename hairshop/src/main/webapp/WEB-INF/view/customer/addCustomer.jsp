@@ -51,7 +51,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">고객관리</h1>
+                        <h1 class="h3 mb-0 text-gray-800">고객 추가</h1>
                     </div>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -64,38 +64,18 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>이름</th>
-                                            <th>성별</th>
-                                            <th>전화번호</th>
-                                            <th>시술이력</th>
-                                            <th>메모</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-									    <c:forEach var="customer" items="${customerList}">
-									        <tr>
-									            <td>${customer.customerNo}</td>
-									            <td>${customer.customerName}</td>
-									            <td>
-										            <c:choose>
-										                <c:when test="${customer.gender == 'F'}">남자</c:when>
-										                <c:when test="${customer.gender == 'M'}">여자</c:when>
-										            </c:choose>
-									            </td>
-									            <td>${customer.phoneNumber}</td>
-									            <td>${customer.colorLog}</td>
-									            <td>${customer.memo}</td>
-									        </tr>
-									    </c:forEach>
-									</tbody>
-                                </table>
-                            </div>
-                        </div>
+                            <form action="${pageContext.request.contextPath}/customer/addCustomer" method="post">
+							    이름: <input type="text" name="customerName" required /><br>
+							    전화번호: <input type="text" name="phoneNumber" required /><br>
+							    성별: 
+							    <select name="gender">
+							        <option value="F">남자</option>
+							        <option value="M">여자</option>
+							    </select><br>
+							    색상 기록: <input type="text" name="colorLog" /><br>
+							    메모: <textarea name="memo"></textarea><br>
+							    <button type="submit">등록</button>
+							</form>
                     </div>
 
                 </div>

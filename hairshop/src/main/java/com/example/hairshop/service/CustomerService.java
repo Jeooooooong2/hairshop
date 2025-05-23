@@ -14,8 +14,15 @@ public class CustomerService {
 	@Autowired
     private CustomerMapper customerMapper;
 
+	// 고객 리스트 조회
     public List<CustomerVO> getCustomerList() {
         return customerMapper.getCustomerList();
     }
+    
+    // 고객 추가
+    public void insertCustomer(CustomerVO customerVO) {
+        customerMapper.insertCustomer(customerVO);
+    }
+
 
 }
